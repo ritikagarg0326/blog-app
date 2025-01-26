@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: .  # Builds the Docker image from the current directory
+    ports:
+      - "3208:3200"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db  # This sets the DB_HOST environment variable to 'db'
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: Veronica123@
+      MYSQL_DATABASE: blog
+    ports:
+      - "3307:3306"
