@@ -1,3 +1,37 @@
-<p>landing works!</p>
-<p>www</p>
-<app-header></app-header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- Logo Section -->
+    <div class="logo">
+      <a href="/" class="logo-link">MyWebsite</a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="/home" class="nav-item">Home</a>
+      <a href="/blog" class="nav-item">Blog</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input">
+    </div>
+
+    <!-- Authentication Buttons -->
+    <div class="auth-buttons">
+      <button class="btn login-btn">Login</button>
+      <button class="btn register-btn">Register</button>
+    </div>
+  </header>
+
+</body>
+</html>
+<router-outlet></router-outlet>

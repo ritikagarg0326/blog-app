@@ -7,6 +7,8 @@ import { PublicModule } from '../app/public/public.module';
 const routes: Routes = [
  { path: '', loadChildren: ()=> import('../app/public/public.module').then((r) => r.PublicModule)},  // Define some example routes
   // { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default to /home when app loads
+  // You can add other routes here
 ];
 
 @NgModule({
