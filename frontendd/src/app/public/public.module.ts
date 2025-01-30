@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { LandingModule } from './landing/landing.module';
-import { RouterModule } from '@angular/router';
 import { HeaderModule } from './shared/header/header.module';
 
 
@@ -11,7 +10,7 @@ import { HeaderModule } from './shared/header/header.module';
   declarations: [],
   imports: [
     CommonModule,
-    PublicRoutingModule, LandingModule
+    PublicRoutingModule,LandingModule, HeaderModule
   ]
 })
 export class PublicModule { }
