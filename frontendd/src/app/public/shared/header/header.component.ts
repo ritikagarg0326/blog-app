@@ -12,22 +12,22 @@ export class HeaderComponent {
     {
       id: 1,
       title: 'Test 1',
-      excerpt: 'Hello, how do you do?'
+      excerpt: 'Hello, Ritika!!!'
     },
     {
       id: 2,
       title: 'Test 2',
-      excerpt: 'Hello, how do you do?'
+      excerpt: 'Hello, Saumya!!'
     },
     {
       id: 3,
       title: 'Test 3',
-      excerpt: 'Hello, how do you do?'
+      excerpt: 'Hello, Vaishu!!'
     },
     {
       id: 4,
       title: 'Test 4',
-      excerpt: 'Hello, veronica?'
+      excerpt: 'Hello, Veronica!!'
     }
   ];
 }

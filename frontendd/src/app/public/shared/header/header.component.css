@@ -5,16 +5,18 @@
   box-sizing: border-box;
 }
 
-/* Center content vertically and horizontally in the body */
+/* Ensure body and html take full height */
+html, body {
+  height: 100%; /* Full height of the viewport */
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body content starts below the fixed header */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;  /* Align to the top-left of the screen */
-  min-height: 100vh;
-  flex-direction: column;
-  padding: 20px; /* Optional padding */
+  padding-top: 70px; /* Adjust based on header height */
 }
 
 /* Header styles */
@@ -25,8 +27,16 @@ header {
   padding: 15px 30px;
   background-color: #333;
   color: white;
-  width: 100%;
-  max-width: 1200px;
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0;
+  left: 0;
+  right: 0; /* Make sure it spans the full width */
+  z-index: 1000; /* Keep it on top */
+}
+
+/* Remove any margin or padding from the body elements below header */
+body > *:not(header) {
+  margin-top: 0; /* No additional margin */
 }
 
 .logo a {
