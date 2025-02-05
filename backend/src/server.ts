@@ -67,10 +67,10 @@ app.get('/', (req, res) => {
     res.send(`
       <h1>Socket.IO Server Running......</h1>
       <h1>Hi Veronica!!!!!!</h1>
-      <h1>Hello.... Ritika Garg hello love my baby!!!!!</h1>
+   
     `);
   });
 
-app.listen(3200, () =>{
-    console.log('http://localhost:3200');
+app.listen(3100, () =>{
+    console.log('http://localhost:3100');
 });

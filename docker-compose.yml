@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontendd  # Path to your frontend Dockerfile
+    ports:
+      - "4204:4200"
+    depends_on:
+      - app  # Ensures the backend starts first
+    environment:
+      - NODE_ENV=development
+
+  app:
+    build: ./backend
+    ports:
+      - "3203:3100"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=Veronica123@
+      - DB_NAME=blog
+    restart: unless-stopped
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: Veronica123@
+      MYSQL_DATABASE: blog
+    ports:
+      - "3307:3306"
+    restart: unless-stopped
