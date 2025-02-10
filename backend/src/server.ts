@@ -66,7 +66,7 @@ app.get("/api/categories", async (req: any,resp: Response)=>{
 app.get('/', (req, res) => {
     res.send(`
       <h1>Socket.IO Server Running......</h1>
-      <h1>Hi Veronica!!!!!!</h1>
+      <h1>Hi Ritika Garg</h1>
    
     `);
   });

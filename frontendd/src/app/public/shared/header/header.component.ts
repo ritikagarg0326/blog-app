@@ -28,6 +28,21 @@ export class HeaderComponent {
       id: 4,
       title: 'Test 4',
       excerpt: 'Hello, Veronica!!'
+    },
+    {
+      id: 5,
+      title: 'Test 5',
+      excerpt: 'Hello, User!!'
+    },
+    {
+      id: 6,
+      title: 'Test 6',
+      excerpt: 'Hello, there!!'
+    },
+    {
+      id: 7,
+      title: 'Test 7',
+      excerpt: 'Heyy,You!!'
     }
   ];
 }
